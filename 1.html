@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+canvas{background: #ccc;}
+</style>
+</head>
+<body>
+<canvas width="600" height="600">
+	
+</canvas>
+</body>
+<script>
+var canvas=document.getElementsByTagName('canvas')[0];
+var cobj=canvas.getContext('2d');
+//   cobj.fillStyle='red';
+// cobj.fillRect(0,0,100,200);
+   cobj.beginPath();
+   cobj.arc(150,150,30,0,Math.PI*2,true);
+   cobj.stroke();
+</script>
+</html>
